@@ -2,13 +2,6 @@
 
 一个基于 Python 的控制台版员工薪资信息管理系统，使用纯标准库实现，无任何第三方依赖，适合作为 Python 入门练习 / 课程设计项目。
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python\&logoColor=white)
-
-![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
-
-![License](https://img.shields.io/badge/license-MIT-blue)
-
----
 
 ## 功能特性
 
@@ -82,14 +75,6 @@ py sztpython.py
 {'id': '1002', 'name': '李四', 'ticheng': 800, 'bonus': 1200, 'wage': 2500}
 ```
 
-- `employee.txt` 属于运行时数据，建议在 `.gitignore` 中忽略它，不要提交到仓库：
-
-```gitignore
-employee.txt
-__pycache__/
-.idea/
-```
-
 ## 项目结构
 
 ```text
@@ -115,17 +100,14 @@ __pycache__/
 | `total()`         | 统计员工总人数       |
 | `show()`          | 显示全部员工信息      |
 
-## 已知问题 / 待改进
-
-欢迎提交 Issue 或 PR：
-
-- [ ] 显示表格的“奖金”列取值有误，实际重复输出了“提成”字段
-- [ ] “总薪资”计算未计入“奖金”
-- [ ] “修改员工信息”功能执行后数据文件会被清空，修改结果无法保存
+## 待改进
 - [ ] 数据以 `eval()` 解析，可考虑改用 `json` 序列化
 - [ ] 输入非数字时的异常处理不完整（如菜单选择、薪资输入）
 - [ ] 可增加“清空数据”“按 ID 校验重复”等功能
 
 ## 许可证
+本项目为学习用途，仅供个人学习与演示，请勿用于商业用途。
 
-本项目采用 [MIT License](LICENSE) 开源，可自由学习、修改与分发。如需使用其他协议，请替换 `LICENSE` 文件。
+---
+
+Made with ❤️ by 丿神灬大少
